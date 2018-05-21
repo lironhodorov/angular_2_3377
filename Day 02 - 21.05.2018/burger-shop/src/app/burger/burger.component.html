@@ -1,7 +1,13 @@
 
 <div>
-  {{burgerCounter}} &nbsp;
-  <span *ngIf="burgerCounter%2">Chicken</span>
-  <span *ngIf="!(burgerCounter%2)">Fish</span>
-  Burger
+  <span *ngIf="burgerCounter%2">{{burgerCounter}}</span>
+   {{myBurgerType}} Burger
 </div>
+
+<!--
+  chips
+  extra-large
+  salad
+  well-done
+  drink
+-->

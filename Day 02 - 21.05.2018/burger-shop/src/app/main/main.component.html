@@ -8,3 +8,7 @@
 <button (click)="addBurger('Chicken')">
   ADD New Chicken-Burger
 </button>
+
+<div *ngFor="let x of burgerArray">
+  <app-burger [burgerType]="x"></app-burger>
+</div>

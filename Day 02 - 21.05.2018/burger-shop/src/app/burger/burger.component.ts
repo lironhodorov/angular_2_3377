@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-burger',
@@ -6,13 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./burger.component.css']
 })
 export class BurgerComponent implements OnInit {
+  @Input("burgerType") myBurgerType:string;
+  static counter: number = 1;
+  burgerCounter: number;
 
-  static counter:number=1;
-  burgerCounter:number;
-
-  constructor() { 
+  constructor() {
     console.log(`Burger num ${BurgerComponent.counter} ctor`)
-    this.burgerCounter=BurgerComponent.counter++;
+    this.burgerCounter = BurgerComponent.counter++;
   }
 
   ngOnInit() {
