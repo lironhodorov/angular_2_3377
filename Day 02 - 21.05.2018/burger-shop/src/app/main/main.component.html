@@ -1,6 +1,7 @@
 <p>
   main works!
 </p>
+<h2>you ordered {{chipsCount}} chips</h2>
 
 <button (click)="addBurger('Fish')">
   ADD New Fish-Burger
@@ -10,5 +11,5 @@
 </button>
 
 <div *ngFor="let x of burgerArray">
-  <app-burger [burgerType]="x"></app-burger>
+  <app-burger [burgerType]="x" (chipsAdd)="addChips()"></app-burger>
 </div>

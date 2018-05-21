@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main.component.css']
 })
 export class MainComponent implements OnInit {
+  chipsCount: number = 0;
 
-  burgerArray:string[]=[];
+  addChips() {
+    this.chipsCount++;
+  }
+  burgerArray: string[] = [];
 
-  addBurger(param:string){
+  addBurger(param: string) {
     this.burgerArray.push(param);
   }
   constructor() { }
