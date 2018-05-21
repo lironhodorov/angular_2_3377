@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainComponent implements OnInit {
 
+  burgerArray:string[]=[];
+
+  addBurger(param:string){
+    this.burgerArray.push(param);
+  }
   constructor() { }
 
   ngOnInit() {

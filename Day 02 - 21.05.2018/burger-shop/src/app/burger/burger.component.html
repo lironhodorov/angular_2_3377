@@ -1,3 +1,7 @@
-<p>
-  burger {{burgerCounter}} works!
-</p>
+
+<div>
+  {{burgerCounter}} &nbsp;
+  <span *ngIf="burgerCounter%2">Chicken</span>
+  <span *ngIf="!(burgerCounter%2)">Fish</span>
+  Burger
+</div>
